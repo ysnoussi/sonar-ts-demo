@@ -6,6 +6,9 @@ class MockHelloService implements IHelloService {
     public sayHello(): string {
         return "Hello world!";
     }
+    public sayHi(): string {
+        return "Hi world!";
+    }
 }
 
 describe("HelloComponent", () => {
