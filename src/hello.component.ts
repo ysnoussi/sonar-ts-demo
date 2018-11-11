@@ -7,7 +7,7 @@ export class HelloComponent {
     public sayHello(): string {
         return this.helloService.sayHello();
     }
-    public sayHi(): string {
+/*     public sayHi(): string {
         return this.helloService.sayHello();
     }
     public greetings(name: string): string {
@@ -15,5 +15,5 @@ export class HelloComponent {
     }
     public notPolite(name: string): string {
         return this.helloService.notPolite(name);
-    }
+    } */
 }
