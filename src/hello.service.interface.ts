@@ -1,9 +1,6 @@
 export interface IHelloService {
     sayHello(): string;
-}
+    greetings(name: string): string;
+    notPolite(name: string): string;
 
-export class HelloService implements IHelloService {
-    public sayHello(): string {
-        return "Hello world!";
-    }
 }

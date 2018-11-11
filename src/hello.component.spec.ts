@@ -9,6 +9,12 @@ class MockHelloService implements IHelloService {
     public sayHi(): string {
         return "Hi world!";
     }
+    public greetings(name: string): string {
+        return `Hi $name!` ;
+    }
+    public notPolite(name: string): string {
+        return `Get out $name!`;
+    }
 }
 
 describe("HelloComponent", () => {
