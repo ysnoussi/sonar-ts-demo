@@ -3,8 +3,8 @@ var sonarqubeScanner = require('sonarqube-scanner');
  
 gulp.task('sonar', function(callback) {
   sonarqubeScanner({
-    serverUrl : "http://localhost:9000",
-    // serverUrl : "http://sonarqube:9000",
+   // serverUrl : "http://localhost:9000",
+    serverUrl : "http://sonarqube:9000",
     options : {
     }
   }, callback);
