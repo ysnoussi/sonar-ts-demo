@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./dist/index.js",
     "build": "tsc",
-    "test": "mocha ./src/*.spec.ts --recursive --compilers  ts:ts-node/register --bail",
+    "test": "mocha ./src/*.spec.ts --reporter mocha-sonarqube-reporter --reporter-options output=test-xunit.xml --recursive --compilers  ts:ts-node/register --bail",
     "lint": "tslint --project tsconfig.json -c tslint.json 'src/**/*.ts'",
     "start:dev": "NODE_ENV=development nodemon --watch app/ --exec 'ts-node' src/index.ts",
     "cover": "nyc --report-dir coverage npm run test",
@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1",
+    "mocha-sonarqube-reporter": "^1.0.1",
     "sonarqube-scanner": "^2.0.1",
     "tslint": "^5.7.0",
     "tslint-sonarts": "^1.0.0",
