@@ -1,5 +1,0 @@
-<testExecutions version="1">
-<file path="src/hello.component.spec.ts">
-<testCase name="HelloComponent: should say &apos;Hello world!&apos;" duration="1"/>
-</file>
-</testExecutions>
