@@ -25,10 +25,10 @@ describe("HelloComponent", () => {
 
         expect(helloComponent.sayHello()).equal("Hello world!");
     });
-    it("should say 'Hi world!'", () => {
+  /*  it("should say 'Hi world!'", () => {
         const mockHelloService = new MockHelloService();
         const helloComponent = new HelloComponent(mockHelloService);
 
-        expect(helloComponent.sayHello()).equal("Hi world!");
-    });
+        expect(helloComponent.sayHi()).equal("Hi world!");
+    });*/
 });
