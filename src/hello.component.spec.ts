@@ -6,7 +6,7 @@ class MockHelloService implements IHelloService {
     public sayHello(): string {
         return "Hello world!";
     }
-     public sayHi(): string {
+   /*  public sayHi(): string {
         return "Hi world!";
     }
     public greetings(name: string): string {
@@ -14,7 +14,7 @@ class MockHelloService implements IHelloService {
     }
     public notPolite(name: string): string {
         return `Get out $name!`;
-    } 
+    } */
 }
 
 describe("HelloComponent", () => {
